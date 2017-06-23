@@ -1,0 +1,253 @@
+/* GENERAL LAYOUT STYLES ============================== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: #C1BCAC;
+  color: #333333;
+  line-height: 1.6;
+  /*remove space around entire page, add a font-family */
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+img.logo {
+  width: 50px;
+}
+
+/* style your .wrapper here */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1280px;
+}
+
+
+/* TYPOGRAPHY ============================== */
+h1 {
+  font-size: 50px;
+}
+h1, h2 {
+  font-family: 'Over the Rainbow', cursive;
+}
+
+
+
+/* NAV ============================== */
+nav {
+  background: #214E34;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background:black;
+  color: yellow;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+
+}
+
+/*Responsive Nav Style*/
+.hamburger, .close {
+  display: none;
+
+}
+
+@media (max-width: 650px) {
+  
+  nav {
+    text-align: right;
+  }
+  .hamburger, .close {
+    display: block;
+    font-size: 50px;
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+    color: eggshell;
+  }
+  
+  .main-nav {
+    position: fixed;
+    width: 100%;
+    top: -100vh;
+    transition: top 0.5s;
+  }
+  nav a {
+    transition: all 0.3s;
+  }
+  
+  .open-nav {
+    top: 0;
+    height: 100vh;
+    background: salmon;
+    transition: top 0.5s;
+  }
+  
+  .open-nav li {
+    display: block;
+    text-align: center;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER ============================== */
+header {
+  background: #5C7457;
+  padding: 120px 0 80px;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 80px;
+}
+header,
+.social,
+footer {
+  text-align: center;
+}
+
+
+/* MAIN ============================== */
+main {
+  padding: 100px 0;
+}
+/*style your main .wrapper here*/
+main .wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+/* BIO - ASIDE ============================== */
+aside {
+  background: #EFD0CA;
+  width: 30%;
+  padding: 30px;
+}
+aside img {
+  border-radius: 50%;
+}
+aside p {
+  text-align: justify;
+}
+
+/* ABOUT - SECTION ============================== */
+#about {
+  width: 60%;
+}
+
+
+
+/* SOCIAL - SECTION ============================== */
+.social {
+  background: #5C7457;
+  padding: 30px;
+}
+.social a {
+  color: #ffffff;
+  font-size: 60px;
+  padding: 10px;
+  text-decoration: none;
+}
+.social a:hover {
+  color: rebeccapurple;
+}
+
+
+/* FOOTER ============================== */
+footer {
+  background: #979B8D;
+  padding: 100px 0 130px;
+}
+.fine-print {
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+form {
+  background: orange;
+  max-width: 600px;
+  text-align:left;
+  margin:0 auto;
+  padding: 20px;
+}
+
+label, textarea {
+  display: block;
+
+}
+
+textarea {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+input.button {
+  width: 100px;
+    padding: 20px;
+    -webkit-appearance: none;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="text"] {
+  border: solid 3px green;
+}
+
+input:focus {
+  border: 3px double magenta;
+  outline: none;
+  background: lightblue;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
+/*.carousel { height: 100%; }
+
+.carousel-cell { height: 100% }
+
+/* move page dots into carousel */
+/*.flickity-page-dots { bottom: 10px; }*/*/
